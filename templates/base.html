@@ -1,0 +1,74 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{% get_current_language as LANGUAGE_CODE %} {{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/7212/7212644.png">
+    <title>
+        {% block titulo %}
+            {% trans "Mi Sitio Web Moderno" %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'assets/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <!-- <form action="{% url 'set_language' %}" method="post">
+        {% csrf_token %}
+        <select name="language" onchange="this.form.submit()">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% for lang in LANGUAGES %}
+                <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+                    {{ lang.1 }}
+                </option>
+            {% endfor %}
+        </select>
+
+    </form> -->
+    <header>
+        <div class="container">
+            <h1>Bienvenido a Nuestro Sitio</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}" class="active">{% trans "Inicio" %}</a></li>
+                    <li><a href="{% url 'lista_productos' %}">{% trans "Productos" %}</a></li>
+                    <li><a href="{% url 'categorias' %}">{% trans "Categorias" %}</a></li>
+                    <li><a href="{% url 'marcas' %}">{% trans "Marcas" %}</a></li>
+                    <li><a href="{% url 'proveedores' %}">{% trans "Proveedores" %}</a></li>
+                    <li><a href="{% url 'contacto' %}">{% trans "Contacto" %}</a></li>
+                    {% if user.is_authenticated %}
+                        
+                        <li><a href="{% url 'lista_usuarios' %}">Lista de Usuarios</a></li>
+                        <li><a href="{% url 'editar_usuario' %}">Editar Perfil</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                        <li><a href="{% url 'registro' %}">Registrarse</a></li>
+                    {% endif %}
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {% block contenido %}
+        
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; {% trans "2025 Mi Sitio Web. Todos los derechos reservados." %}</p>
+        </div>
+    </footer>
+    <script src="{% static 'assets/js/base.js' %}"></script>
+    {% block js %}{% endblock %}
+</body>
+</html>

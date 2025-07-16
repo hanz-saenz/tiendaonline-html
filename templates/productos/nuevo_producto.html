@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Nuevo Producto
+{% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+
+{% block contenido %}
+
+
+<section class="">
+            <h2>Crear Producto</h2>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+</section>
+
+    
+{% endblock %}  
+
+
+{% block js %}
+
+
+{% endblock %}
