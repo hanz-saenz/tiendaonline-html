@@ -375,3 +375,51 @@ def lista_productos_index(request):
         'productos': productos
     }
     return render(request, 'productos/index.html', context)
+
+
+
+@user_passes_test(es_superuser, login_url='index')
+def lista_productos_html(request):
+    pagina = request.GET.get('page')
+
+    cache_key = f"productos_{pagina}"
+
+    productos = cache.get(cache_key)
+    logger_productos.debug(f"Productos obtenidos de la cache: {productos}")
+    if not productos:
+        productos = Producto.objects.filter(activo=True).select_related('proveedor', 'marca').prefetch_related('categorias')
+        for producto in productos:
+            imagen_principal = Imagen.objects.filter(producto=producto, es_principal=True).first()
+            if imagen_principal:
+                producto.imagen = imagen_principal.imagen
+        paginador = Paginator(productos, 3)
+        productos = paginador.get_page(pagina)
+
+        cache.set(cache_key, productos, 60 * 15)
+    variable = "hola"
+    try:
+        print(variable+4)
+    except Exception as e:
+        logger_productos.error(f"Error al acceder a la variable: {e}")
+
+    context = {
+        'productos': productos,
+        # 'page_obj': paginador
+    }
+
+    print('productos', productos)
+
+    return render(request, 'productos_html/lista_productos.html', context)
+
+
+class CategoriasViewHtml(LoginRequiredMixin, PermissionRequiredMixin,TemplateView):
+    template_name = 'productos_html/categorias_html.html'
+    permission_required = ('productos.view_categoria', 'productos.add_categoria', 'productos.change_categoria', 'productos.delete_categoria')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        categorias = Categoria.objects.all()
+       
+        context['categorias'] = categorias
+        return context
+    

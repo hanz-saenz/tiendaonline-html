@@ -1,0 +1,35 @@
+{% extends 'base_html.html' %}
+{% load static %}
+{% block titulo %}
+    Home
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+
+{% block contenido %}
+
+ <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-semibold">Categorías</h2>
+            <button onclick="alert('Función de crear categoría no implementada')" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Crear Categoría</button>
+        </div>
+        <section id="category-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="category-card bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold">{{categoria.nombre}}</h3>
+                <div class="mt-4 flex space-x-2">
+                    <button onclick="alert('Editar categoría ID: categoria.id')" class="action-button edit-button">Editar</button>
+                    <button onclick="alert('Eliminar categoría ID: categoria.id')" class="action-button delete-button">Eliminar</button>
+                    <button onclick="alert('Detalles de la categoría: categoria.name')" class="action-button details-button">Detalles</button>
+                </div>
+            </div>
+           
+        </section>
+
+
+{% endblock %}
+
+{% block js %}
+
+
+
+{% endblock %}

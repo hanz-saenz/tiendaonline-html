@@ -1,0 +1,51 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{% get_current_language as LANGUAGE_CODE %} {{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/7212/7212644.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    <title>
+        {% block titulo %}
+            {% trans "Mi tienda" %}
+        {% endblock %}
+    </title>
+    
+    {% block css %}{% endblock %}
+</head>
+<body>
+   
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 shadow-md sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Tech Store</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:underline">Inicio</a></li>
+                    <li><a href="{% url 'lista_productos_html' %}" class="hover:underline font-bold">Productos</a></li>
+                    <li><a href="{% url 'categorias_html' %}" class="hover:underline">Categorías</a></li>
+                    <li><a href="brands.html" class="hover:underline">Marcas</a></li>
+                    <li><a href="providers.html" class="hover:underline">Proveedores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        {% block contenido %}
+        
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>© 2025 Tech Store. Todos los derechos reservados.</p>
+    </footer>
+    {% block js %}{% endblock %}
+</body>
+</html>

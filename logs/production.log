@@ -2108,3 +2108,190 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 "GET /es/ HTTP/1.1" 200 16372
 - Broken pipe from ('127.0.0.1', 49644)
+Watching for file changes with StatReloader
+"GET /es/ HTTP/1.1" 200 16371
+D:\Clases\Python\Enyoi\Ejercicios\Python\tienda-html\productos\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Clases\Python\Enyoi\Ejercicios\Python\tienda-html\productos\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Clases\Python\Enyoi\Ejercicios\Python\tienda-html\productos\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /es/produtos
+"GET /es/produtos HTTP/1.1" 404 19547
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 16317
+Not Found: /es/ productos/ productos
+"GET /es/%20productos/%20productos HTTP/1.1" 404 19607
+"GET /es/productos/productos HTTP/1.1" 301 0
+"GET /es/productos/productos/ HTTP/1.1" 302 0
+"GET /es/?next=/es/productos/productos/ HTTP/1.1" 200 16401
+"GET /es/login/ HTTP/1.1" 200 16721
+"POST /es/login/ HTTP/1.1" 302 0
+"GET /es/ HTTP/1.1" 200 16498
+"GET /es/productos/productos/ HTTP/1.1" 200 19221
+"GET /static/assets/css/productos.css HTTP/1.1" 200 776
+"GET /media/imagenes/56a38571dde36168af1b9ba61d441b89.webp HTTP/1.1" 200 42558
+"GET /media/imagenes/photo-1560185128-e173042f79dd.jpg HTTP/1.1" 200 784473
+"GET /media/imagenes/photo-1607870411590-d5e9e06da09a.jpg HTTP/1.1" 200 521744
+"GET /es/productos/productos/ HTTP/1.1" 200 19217
+"GET /es/productos/productos/ HTTP/1.1" 200 19217
+"GET /es/productos/productos/ HTTP/1.1" 200 18404
+"GET /static/assets/css/styles.css HTTP/1.1" 200 1135
+"GET /es/productos/productos/ HTTP/1.1" 200 20112
+"GET /static/assets/js/main.js HTTP/1.1" 200 9040
+"GET /es/productos/productos/ HTTP/1.1" 302 0
+"GET /es/?next=/es/productos/productos/ HTTP/1.1" 200 16401
+"GET /es/productos/productos/ HTTP/1.1" 200 20112
+- Broken pipe from ('127.0.0.1', 62515)
+"GET /es/productos/productos/ HTTP/1.1" 200 20112
+"GET /static/assets/css/styles.css HTTP/1.1" 200 1135
+"GET /static/assets/css/productos.css HTTP/1.1" 200 776
+"GET /static/assets/js/base.js HTTP/1.1" 200 602
+"GET /static/assets/js/main.js HTTP/1.1" 200 9040
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 29444
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14803
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4692
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+- Broken pipe from ('127.0.0.1', 64888)
+- Broken pipe from ('127.0.0.1', 64891)
+Not Found: /es/productos/productos/installHook.js.map
+"GET /es/productos/productos/installHook.js.map HTTP/1.1" 404 29758
+"GET /es/productos/productos/ HTTP/1.1" 200 20112
+- Broken pipe from ('127.0.0.1', 64890)
+- Broken pipe from ('127.0.0.1', 64892)
+Not Found: /es/productos/productos/installHook.js.map
+"GET /es/productos/productos/installHook.js.map HTTP/1.1" 404 29758
+"GET /es/productos/productos/ HTTP/1.1" 200 20112
+- Broken pipe from ('127.0.0.1', 64889)
+Not Found: /es/productos/productos/installHook.js.map
+"GET /es/productos/productos/installHook.js.map HTTP/1.1" 404 29757
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 29444
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 16317
+"GET /es/productos/productos/ HTTP/1.1" 200 20063
+"GET /static/assets/css/styles.css HTTP/1.1" 200 1135
+"GET /static/assets/css/productos.css HTTP/1.1" 200 776
+"GET /static/assets/js/main.js HTTP/1.1" 200 9040
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 29444
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14803
+Not Found: /es/productos/productos/installHook.js.map
+"GET /es/productos/productos/installHook.js.map HTTP/1.1" 404 29757
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4692
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+Not Found: /es/productos/productos/categories.html
+"GET /es/productos/productos/categories.html HTTP/1.1" 404 29746
+Not Found: /es/productos/productos/installHook.js.map
+"GET /es/productos/productos/installHook.js.map HTTP/1.1" 404 29757
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 49661)
+Not Found: /es/productos/productos/installHook.js.map
+"GET /es/productos/productos/installHook.js.map HTTP/1.1" 404 29757
+D:\Clases\Python\Enyoi\Ejercicios\Python\tienda-html\productos\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Clases\Python\Enyoi\Ejercicios\Python\tienda-html\productos\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /es/productos/categorias-html/ HTTP/1.1" 200 15669
+Not Found: /es/productos/categorias-html/installHook.js.map
+"GET /es/productos/categorias-html/installHook.js.map HTTP/1.1" 404 30157
+"GET /es/productos/categorias-html/ HTTP/1.1" 200 15667
+Not Found: /es/productos/categorias-html/installHook.js.map
+"GET /es/productos/categorias-html/installHook.js.map HTTP/1.1" 404 30157
+- Broken pipe from ('127.0.0.1', 51942)
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /es/productos/categorias-html/ HTTP/1.1" 200 15667
+"GET /static/assets/css/styles.css HTTP/1.1" 200 1135
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14803
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 29444
+Not Found: /es/productos/categorias-html/installHook.js.map
+"GET /es/productos/categorias-html/installHook.js.map HTTP/1.1" 404 30157
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4692
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /es/productos/categorias-html/ HTTP/1.1" 200 20724
+"GET /static/assets/css/styles.css HTTP/1.1" 200 1135
+"GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 14803
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 29444
+Not Found: /es/productos/categorias-html/installHook.js.map
+"GET /es/productos/categorias-html/installHook.js.map HTTP/1.1" 404 30157
+"GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4692
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+Not Found: /es/productos/categorias-html/products.html
+"GET /es/productos/categorias-html/products.html HTTP/1.1" 404 30137
+Not Found: /es/productos/categorias-html/installHook.js.map
+"GET /es/productos/categorias-html/installHook.js.map HTTP/1.1" 404 30157
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 56503)
+Not Found: /es/productos/categorias-html/installHook.js.map
+"GET /es/productos/categorias-html/installHook.js.map HTTP/1.1" 404 30157
+Internal Server Error: /es/productos/categorias-html/
+Traceback (most recent call last):
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "D:\Clases\Python\Enyoi\Ejercicios\Python\venv_tienda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'list_productos_html' not found. 'list_productos_html' is not a valid view function or pattern name.
+"GET /es/productos/categorias-html/ HTTP/1.1" 500 152919
+Not Found: /es/productos/categorias-html/installHook.js.map
+"GET /es/productos/categorias-html/installHook.js.map HTTP/1.1" 404 30158
+"GET /es/productos/categorias-html/ HTTP/1.1" 200 20749
+Not Found: /es/productos/categorias-html/installHook.js.map
+"GET /es/productos/categorias-html/installHook.js.map HTTP/1.1" 404 30157
+"GET /es/productos/categorias-html/ HTTP/1.1" 200 20749
+Not Found: /es/productos/categorias-html/installHook.js.map
+"GET /es/productos/categorias-html/installHook.js.map HTTP/1.1" 404 30158
+"GET /static/assets/css/styles.css HTTP/1.1" 200 1135
+"GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+"GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 29444
+Not Found: /es/productos/categorias-html/index.html
+"GET /es/productos/categorias-html/index.html HTTP/1.1" 404 30126
+Not Found: /es/productos/categorias-html/installHook.js.map
+"GET /es/productos/categorias-html/installHook.js.map HTTP/1.1" 404 30157
+Not Found: /es/productos/categorias-html/installHook.js.map
+"GET /es/productos/categorias-html/installHook.js.map HTTP/1.1" 404 30157
+- Broken pipe from ('127.0.0.1', 56502)
+- Broken pipe from ('127.0.0.1', 58373)
+- Broken pipe from ('127.0.0.1', 56393)
+- Broken pipe from ('127.0.0.1', 58374)
+"GET / HTTP/1.1" 302 0
+"GET /es/ HTTP/1.1" 200 16498
+"GET /es/productos/productos/ HTTP/1.1" 200 20092
+"GET /es/productos/categorias-html/ HTTP/1.1" 200 19536
+"GET /es/productos/categorias-html/ HTTP/1.1" 200 360539

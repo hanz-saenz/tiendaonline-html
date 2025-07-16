@@ -1,0 +1,114 @@
+{% extends 'base_html.html' %}
+{% load static %}
+{% block titulo %}
+    Home
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'assets/css/productos.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+<div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-semibold">Productos</h2>
+            <button onclick="alert('Función de crear producto no implementada')" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Crear Producto</button>
+        </div>
+        <!-- Filters -->
+        <section class="mb-8">
+            <h3 class="text-xl font-semibold mb-4">Filtrar Productos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div>
+                    <label for="category" class="block text-sm font-medium">Categoría</label>
+                    <select id="category" class="w-full p-2 border rounded">
+                        <option value="">Todas</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="brand" class="block text-sm font-medium">Marca</label>
+                    <select id="brand" class="w-full p-2 border rounded">
+                        <option value="">Todas</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="provider" class="block text-sm font-medium">Proveedor</label>
+                    <select id="provider" class="w-full p-2 border rounded">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <!-- Product Catalog -->
+        <section id="product-catalog" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Populated by JavaScript -->
+        </section>
+
+<!-- <div class="content-section">
+            <h2>Lista de Productos</h2>
+            {% if user.is_authenticated %}
+            <a href="{% url 'crear_producto' %}" class="btn btn-primary">Crear Productos</a>
+            {% endif %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Imagen</th>
+                        {% if user.is_authenticated %}
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                        {% endif %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for producto in productos %}
+                    <tr>
+                        <td>{{ producto.nombre }}</td>
+                        <td>{{ producto.precio }}</td>
+                        <td>
+                            {% if producto.imagen %}
+                            <img src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}" width="100" height="100">
+                            {% else %}
+                            <img src="https://hapuricellisa.com.ar/plugins/productos/producto-sin-imagen.png" alt="sin producto" width="100" height="100">
+                            {% endif %}
+                        </td>
+                        {% if user.is_authenticated %}
+                            <td><a href="{% url 'actualizar_producto' producto.id %}" class="btn btn-warning">Editar</a></td>
+                            <td><a href="{% url 'eliminar_producto' producto.id %}" class="btn btn-danger">Eliminar</a></td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                
+            </table>
+        </div>
+        <div class="pagination">
+    <span class="step-links">
+        {% if productos.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ productos.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ productos.number }} of {{ productos.paginator.num_pages }}.
+        </span>
+
+        {% if productos.has_next %}
+            <a href="?page={{ productos.next_page_number }}">next</a>
+            <a href="?page={{ productos.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div> -->
+
+{% endblock %}
+
+{% block js %}
+
+
+
+<script>
+    console.log("Página de productos cargada");
+</script>
+
+{% endblock %}

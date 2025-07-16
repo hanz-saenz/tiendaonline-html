@@ -3,6 +3,7 @@ from .views import *
 
 urlpatterns = [
     path('lista/', lista_productos, name='lista_productos'),
+    path('productos/', lista_productos_html, name='lista_productos_html'),
     path('lista-productos/', ProductosView.as_view(), name='productos'),
     path('lista-categorias/', CategoriasView.as_view(), name='categorias'),
     path('nueva-categoria/', nueva_categoria, name='nueva_categoria'),
@@ -37,4 +38,5 @@ urlpatterns = [
     #generar tarea
     path('generar-tarea/', generar_tare, name='generar_tarea'),
     path('estado-tarea/<str:tarea_id>/', consultar_tarea, name='consultar_tarea'),
+    path('categorias-html/', CategoriasViewHtml.as_view(), name='categorias_html'),
 ]
